@@ -13,9 +13,12 @@ from adapters.generic.temperature_sensor import TemperatureSensorAdapter
 from adapters.generic.water_leak_sensor import WaterLeakSensorAdapter
 from adapters.gira.light_link import GiraLightLink
 from adapters.heiman.HS1WLE import HS1WLE
+from adapters.heiman.HS2SK import HS2SK
 from adapters.ikea.tradfri_remote_control import TradfriRemoteControl
 from adapters.ikea.tradfri_wireless_dimmer import TradfriWirelessDimmer
 from adapters.ikea.tradfri_switch_on_off import TradfriRemoteSwitchOnOff
+from adapters.ikea.tradfri_remote_close_open import TradfriRemoteCloseOpen
+from adapters.ikea.tradfri_roller_blind import TradfriRollerBlind
 from adapters.innr.SP120 import InnrSP120Plug
 from adapters.konke.button import KonkeButton
 from adapters.konke.sensor_temp_hum import KonkeTemperatureHumiditySensor
@@ -102,6 +105,7 @@ adapter_by_model = {
     'HS1SA': SmokeSensorAdapter,        # HEIMAN Smoke detector
     'HS1WL': WaterLeakSensorAdapter,    # HEIMAN Water leakage sensor
     'HS1-WL-E': HS1WLE,                 # HEIMAN Water leakage sensor
+    'HS2SK': HS2SK,                     # HEIMAN socket Zigbee (on/off, power measurement)
     'HS3SA': SmokeSensorAdapter,        # HEIMAN Smoke detector
     # Hive
     'HALIGHTDIMWWB22': DimmableBulbAdapter,     # Hive Active smart bulb white LED (B22)
@@ -121,6 +125,7 @@ adapter_by_model = {
     'LED1733G7': DimmableCtBulbAdapter, # IKEA TRADFRI LED bulb E14 600 lumen, dimmable, white spectrum, opal white
     'LED1836G9': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb E26/E27 805 lumen, dimmable, opal white
     'LED1837R5': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb GU10 400 lumen, dimmable
+    'LED1842G3': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb E27 250 lumen, dimmable, clear
     'ICPSHC24-10EU-IL-1': DimmableBulbAdapter,  # IKEA TRADFRI driver for wireless control (10 watt)
     'ICPSHC24-30EU-IL-1': DimmableBulbAdapter,  # IKEA TRADFRI driver for wireless control (30 watt)
     'ICTC-G-1': TradfriWirelessDimmer,  # IKEA TRADFRI wireless dimmer
@@ -134,6 +139,8 @@ adapter_by_model = {
     'E1603': OnOffSwitchAdapter,        # IKEA TRADFRI control outlet
     'E1743': TradfriRemoteSwitchOnOff,        # IKEA TRADFRI ON/OFF switch
     'E1603/E1702': OnOffSwitchAdapter,  # IKEA TRADFRI control outlet
+    'E1766': TradfriRemoteCloseOpen,    # IKEA TRADFRI open close remote
+    'E1757': TradfriRollerBlind,        # IKEA TRADFRI roller blind
     # Immax
     'IM-Z3.0-DIM': DimmableBulbAdapter, # Immax LED E14/230V C35 5W TB 440LM ZIGBEE DIM
     # Innr
