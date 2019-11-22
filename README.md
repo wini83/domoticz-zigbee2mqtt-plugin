@@ -96,6 +96,7 @@ git pull
 - HEIMAN Door sensor
 - HEIMAN Smoke detector
 - HEIMAN Water leakage sensor
+- HEIMANN Carbon monoxide sensor
 
 ### Hive
 - Hive Active smart bulb white LED (E27)
@@ -125,6 +126,9 @@ git pull
 - IKEA FLOALT LED light panel, dimmable, white spectrum (30x90 cm)
 - IKEA SURTE door light panel, dimmable, white spectrum (38x64 cm)
 - IKEA FYRTUR block-out roller blind
+
+### Itead
+- ITEAD SONOFF ZigBee DIY Smart Switch
 
 ### Immax
 - Immax LED E14/230V C35 5W TB 440LM ZIGBEE DIM 
@@ -217,6 +221,7 @@ git pull
 ### Philips
 - Philips Hue Being
 - Philips Hue Go
+- Philips Hue Fillament Bulb G93
 - Philips Hue Lux A19 bulb E27
 - Philips Hue motion sensor
 - Philips Hue motion outdoor sensor
@@ -238,6 +243,7 @@ git pull
 - Philips Hue white and color ambiance Flourish ceiling light
 - Philips Hue white and color ambiance GU10
 - Philips Hue white and color ambiance LightStrip plus
+- Philips Hue white and color ambiance LightStrip outdoor
 - Philips Hue white and color ambiance Play Lightbar
 
 ### Sengled
