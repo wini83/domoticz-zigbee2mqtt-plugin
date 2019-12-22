@@ -2,6 +2,7 @@
 
 ## master
 - Properly handle heartbeat message from IKEA TRADFRI Remote Control
+- Improve Xiaomi Aqara double key wired wall switch (QBKG03LM) support
 
 New devices:
 - Xiaomi MiJia gas leak detector
@@ -23,6 +24,8 @@ New devices:
 - Philips Hue white and color ambiance LightStrip outdoor
 - Philips Hue Fillament Bulb G93
 - Heiman Carbon monoxyde HS1CA-E
+- Netvox Power socket with power consumption monitoring
+- Xiaomi Aqara Opple 6-button switch
 
 ## 0.0.19
 - Add temperature sensor support for Xiaomi Mi power plug
