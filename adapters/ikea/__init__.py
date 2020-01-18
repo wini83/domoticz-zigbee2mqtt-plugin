@@ -3,6 +3,7 @@ from adapters.dimmable_bulb_adapter import DimmableBulbAdapter
 from adapters.dimmable_ct_bulb_adapter import DimmableCtBulbAdapter
 from adapters.rgb_adapter import RGBAdapter
 from adapters.generic.motion_sensor import MotionSensorAdapter
+from adapters.ikea.symfonisk import Symfonisk
 from adapters.ikea.tradfri_remote_control import TradfriRemoteControl
 from adapters.ikea.tradfri_wireless_dimmer import TradfriWirelessDimmer
 from adapters.ikea.tradfri_switch_on_off import TradfriRemoteSwitchOnOff
@@ -22,6 +23,8 @@ ikea_adapters = {
     'LED1650R5': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb GU10 400 lumen, dimmable
     'LED1732G11': DimmableCtBulbAdapter,# IKEA TRADFRI LED bulb E27 1000 lumen, dimmable, white spectrum, opal white
     'LED1733G7': DimmableCtBulbAdapter, # IKEA TRADFRI LED bulb E14 600 lumen, dimmable, white spectrum, opal white
+    'LED1736G9': DimmableCtBulbAdapter, # IKEA TRADFRI LED bulb E27 806 lumen, dimmable, white spectrum, clear
+    'LED1738G7': DimmableCtBulbAdapter, # IKEA TRADFRI LED bulb E12 600 lumen, dimmable, white spectrum, opal white
     'LED1836G9': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb E26/E27 805 lumen, dimmable, opal white
     'LED1837R5': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb GU10 400 lumen, dimmable
     'LED1842G3': DimmableBulbAdapter,   # IKEA TRADFRI LED bulb E27 250 lumen, dimmable, clear
@@ -32,12 +35,15 @@ ikea_adapters = {
     'L1528': DimmableCtBulbAdapter,     # IKEA FLOALT LED light panel, dimmable, white spectrum (30x90 cm)
     'L1529': DimmableCtBulbAdapter,     # IKEA FLOALT LED light panel, dimmable, white spectrum (60x60 cm)
     'L1531': DimmableCtBulbAdapter,     # IKEA SURTE door light panel, dimmable, white spectrum (38x64 cm)
+    'T1820': DimmableCtBulbAdapter,     # IKEA LEPTITER Recessed spot light
     'E1524': TradfriRemoteControl,      # IKEA TRADFRI remote control
     'E1524/E1810': TradfriRemoteControl,      # IKEA TRADFRI remote control
     'E1525': MotionSensorAdapter,       # IKEA TRADFRI motion sensor
     'E1603': OnOffSwitchAdapter,        # IKEA TRADFRI control outlet
     'E1743': TradfriRemoteSwitchOnOff,        # IKEA TRADFRI ON/OFF switch
+    'E1744': Symfonisk,                 # IKEA SYMFONISK sound controller
     'E1603/E1702': OnOffSwitchAdapter,  # IKEA TRADFRI control outlet
     'E1766': TradfriRemoteCloseOpen,    # IKEA TRADFRI open close remote
     'E1757': TradfriRollerBlind,        # IKEA TRADFRI roller blind
+    'E1926': TradfriRollerBlind,        # IKEA TRADFRI roller blind
 }

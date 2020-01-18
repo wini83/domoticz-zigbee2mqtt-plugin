@@ -1,5 +1,20 @@
 # Changelog
 
+## master
+- Update adapter for Nue / 3A Smart in-wall switch (HGZB-01A)
+- Improve Xiaomi Aqara single key wireless wall switch (WXKG03LM) support
+
+New devices:
+- IKEA LEPTITER Recessed spot light
+- IKEA SYMFONISK sound controller
+- IKEA TRADFRI LED bulb E27 806 lumen, dimmable, white spectrum, clear
+- IKEA TRADFRI LED bulb E12 600 lumen, dimmable, white spectrum, opal white
+- Xiaomi Aqara Opple 4-button switch
+- eWeLink Zigbee smart plug
+- Innr Smart plug (SP 222)
+- Konke Contact sensor
+- Konke Water detector
+
 ## 0.0.20
 - Properly handle heartbeat message from IKEA TRADFRI Remote Control
 - Improve Xiaomi Aqara double key wired wall switch (QBKG03LM) support

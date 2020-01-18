@@ -15,8 +15,7 @@ from adapters.gira.light_link import GiraLightLink
 from adapters.heiman import heiman_adapters
 from adapters.ikea import ikea_adapters
 from adapters.innr import innr_adapters
-from adapters.konke.button import KonkeButton
-from adapters.konke.sensor_temp_hum import KonkeTemperatureHumiditySensor
+from adapters.konke import konke_adapters
 from adapters.livolo.TI0001 import TI0001
 from adapters.lumi import lumi_adapters
 from adapters.netvox.Z809A import NetvoxZ809A
@@ -94,9 +93,6 @@ adapter_by_model = dict({
     '3326-L': MotionAndTemperatureSensorAdapter,    # Iris Motion and temperature sensor
     # JIAWEN
     'K2RGBW01': RGBWAdapter,            # JIAWEN Wireless Bulb E27 9W RGBW
-    # Konke
-    '2AJZ4KPKEY': KonkeButton,                      # Konke Multi-function button
-    '2AJZ4KPFT': KonkeTemperatureHumiditySensor,    # Konke Temperature and humidity sensor
     # Ksentry
     'KS-SM001': OnOffSwitchAdapter,     # Ksentry Electronics Zigbee OnOff Controller
     # Lingan
@@ -114,7 +110,7 @@ adapter_by_model = dict({
     'N2G-SP': OnOffKwhAdapter,          # NET2GRID N2G-SP
     # Nue
     'FB56+ZSW05HG1.2': OnOffSwitchAdapter,      # Nue ZigBee one gang smart switch
-    'HGZB-01A': DimmableBulbAdapter,    # Nue ZigBee smart light controller
+    'HGZB-01A': OnOffSwitchAdapter,     # Nue ZigBee smart light controller
     'HGZB-02A': DimmableBulbAdapter,    # Nue / 3A ZigBee smart light controller
     # Paul Neuhaus
     '100.424.11': DimmableCtBulbAdapter,    # Paul Neuhaus Q-INIGO LED ceiling light
@@ -155,18 +151,21 @@ adapter_by_model = dict({
     'ZLED-2709': DimmableBulbAdapter,   # Trust Smart Dimmable LED Bulb
     'ZPIR-8000': MotionSensorAdapter,   # Trust Motion Sensor
     'ZCTS-808': ContactAdapter,         # Trust Wireless contact sensor
+    # eWeLink
+    'SA-003-Zigbee': OnOffSwitchAdapter,# eWeLink Zigbee smart plug
     # iCasa
     'ICZB-IW11D': DimmableBulbAdapter,  # iCasa Zigbee 3.0 Dimmer
     # ilux
-    '900008-WW': DimmableBulbAdapter,    # ilux Dimmable A60 E27 LED Bulb
+    '900008-WW': DimmableBulbAdapter,   # ilux Dimmable A60 E27 LED Bulb
     # Eurotronic
-    'SPZB0001': ThermostatAdapter,       # SPZB0001 thermostat
+    'SPZB0001': ThermostatAdapter,      # SPZB0001 thermostat
     # Unbranded DIY adapters
-    'ptvo.switch': PtvoSwitch            # cc2530 zigbee module with pvto.switch firmware (buttons only for now!)
+    'ptvo.switch': PtvoSwitch           # cc2530 zigbee module with pvto.switch firmware (buttons only for now!)
 }, 
     **heiman_adapters,
     **ikea_adapters,
     **innr_adapters,
+    **konke_adapters,
     **lumi_adapters,
     **osram_adapters,
     **philips_adapters,
