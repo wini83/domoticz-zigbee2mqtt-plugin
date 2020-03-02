@@ -30,6 +30,17 @@ git pull
 ```
 2. Restart domoticz
 
+## Zigbee groups support
+
+Plugin supports [zigbee groups](https://www.zigbee2mqtt.io/information/groups.html). It is impossible to automatically identify what device should represent the group (OnOff switch, dimmer, etc.), so plugin relies on suffixes in zigbee group name. Currently following suffixes are supported:
+
+| Suffix  | Device Type                           | Example        |
+|---------|---------------------------------------|----------------|
+| _dimmer | Dimmer Switch                         | mygroup_dimmer |
+| _ct     | Dimmer Switch with Color Temperature  | mygroup_ct     |
+
+if no suffix will be found then On/Off switch will be created by default
+
 ## Supported devices
 
 ### AduroSmart
@@ -47,6 +58,10 @@ git pull
 ### Bitron
 - Bitron Wireless motion detector
 - Bitron Wireless smart plug
+- Bitron Wireless wall thermostat with relay
+
+### Blitzwolf
+- Blitzwolf BW-IS4 Temperature & humidity sensor with display
 
 ### Bosch
 - Bosch Motion sensor
@@ -61,6 +76,14 @@ git pull
 ### Commercial Electric
 - Commercial Electric Matte White Recessed Retrofit Smart Led Downlight - 4 Inch
 
+### CR Smart Home
+- CR Smart Home Valve control
+- CR Smart Home Motion sensor
+- CR Smart Home Door sensor
+- CR Smart Home Smoke sensor
+- CR Smart Home Socket
+- CR Smart Home Water leak detector
+
 ### Dresden Elektronik
 - Dresden Elektronik ZigBee Light Link wireless electronic ballast
 - Dresden Elektronik ZigBee Light Link wireless electronic ballast color temperature
@@ -69,6 +92,9 @@ git pull
 - EcoSmart A19 RGB bulb
 - EcoSmart A19 bright white bulb
 - EcoSmart A19 soft white bulb
+
+### ELKO
+- Elko ESH RS16 316GLED dimmer RF PH. ZigBee in-wall smart dimmer
 
 ### GE
 - GE Link smart LED light bulb, BR30 soft white (2700K)
@@ -81,16 +107,23 @@ git pull
 - Gira ZigBee Light Link wall transmitter
 
 ### Gledopto
-- Gledopto Zigbee LED controller RGB + CCT / RGBW / WWCW / Dimmer 
-- Gledopto Zigbee LED controller WW/CW Dimmer
-- Gledopto Zigbee LED Driver
-- Gledopto Zigbee 10W floodlight RGB CCT
-- Gledopto Zigbee USB mini LED controller RGB + CCT
-- Gledopto Smart 6W E27 RGB / CW LED bulb
-- Gledopto Smart 12W E27 RGB / CW LED bulb
 - Gledopto LED RGB + CCT downlight
+- Gledopto Smart 12W E27 RGB / CW LED bulb
+- Gledopto Smart 6W E27 RGB / CW LED bulb
+- Gledopto Smart RGB+CCT GU10
 - Gledopto Smart RGBW GU10
 - Gledopto Smart Wnite GU10
+- Gledopto Soposh dual white and color
+- Gledopto Zigbee 10W floodlight RGB CCT
+- Gledopto Zigbee LED Driver
+- Gledopto Zigbee LED controller RGB + CCT / RGBW / WWCW / Dimmer 
+- Gledopto Zigbee LED controller RGB + CCT or RGBW
+- Gledopto Zigbee LED controller RGB + CCT plus model
+- Gledopto Zigbee LED controller RGBW plus model    
+- Gledopto Zigbee LED controller WW/CW Dimmer
+- Gledopto Zigbee LED controller dimmer
+- Gledopto Zigbee ON/OFF Wall Switch
+- Gledopto Zigbee USB mini LED controller RGB + CCT
 
 ### HEIMAN
 - HEIMAN Door sensor
@@ -103,6 +136,7 @@ git pull
 - Hive Active smart bulb white LED (B22)
 
 ### Ikea
+- IKEA GUNNARP LED light panel, dimmable, white spectrum (40x40 cm)
 - IKEA SYMFONISK sound controller
 - IKEA TRADFRI LED bulb E26/E27 980 lumen, dimmable, white spectrum, opal white
 - IKEA TRADFRI LED bulb E26/E27 950 lumen, dimmable, white spectrum, clear
@@ -112,6 +146,7 @@ git pull
 - IKEA TRADFRI LED bulb E12/E14 400 lumen, dimmable, white spectrum, opal white
 - IKEA TRADFRI LED bulb E12 600 lumen, dimmable, white spectrum, opal white
 - IKEA TRADFRI LED bulb E26 1000 lumen, dimmable, opal white
+- IKEA TRADFRI LED bulb E26/E27 806 lumen, dimmable, warm white
 - IKEA TRADFRI LED bulb E27 600 lumen, dimmable, color, opal white
 - IKEA TRADFRI LED bulb E27 806 lumen, dimmable, white spectrum, clear
 - IKEA TRADFRI LED bulb E27 1000 lumen, dimmable, white spectrum, opal white
@@ -124,6 +159,7 @@ git pull
 - IKEA TRADFRI control outlet
 - IKEA TRADFRI ON/OFF switch
 - IKEA TRADFRI motion sensor
+- IKEA TRADFRI signal repeater
 - IKEA FLOALT LED light panel, dimmable, white spectrum (30x30 cm)
 - IKEA FLOALT LED light panel, dimmable, white spectrum (60x60 cm)
 - IKEA FLOALT LED light panel, dimmable, white spectrum (30x90 cm)
@@ -138,6 +174,7 @@ git pull
 - Immax LED E14/230V C35 5W TB 440LM ZIGBEE DIM 
 
 ### Innr
+- Innr Color Flex LED strip
 - Innr E27 Bulb
 - Innr E27 Bulb warm dimming
 - Innr E27 Bulb filament clea
@@ -187,6 +224,7 @@ git pull
 ### Müller Licht
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, opal white
+- Müller Licht Tint smart switch
 
 ### Nanoleaf
 - Nanoleaf Ivy smart bulb
@@ -219,6 +257,9 @@ git pull
 - OSRAM Flex RGBW
 - OSRAM Outdoor Flex RGBW
 - OSRAM Classic A60 RGBW
+
+### Oujiabao
+- Oujiabao Gas and carbon monoxide alarm
 
 ### Paul Neuhaus
 - Paul Neuhaus Q-INIGO LED ceiling light
@@ -281,6 +322,10 @@ git pull
 - Philips LivingColors Aura
 - Philips Phoenix light
 
+### ROBB
+- ROBB ZigBee AC phase-cut dimmer
+- ROBB ZigBee AC phase-cut rotary dimmer
+
 ### Sengled
 - Sengled Element Classic (A19)
 - Sengled Element Classic (A60)
@@ -300,6 +345,7 @@ git pull
 - SmartThings Motion sensor (2014, 2015, 2016, 2018 models)
 - SmartThings Multi sensor (2015, 2016, 2018 models)
 - SmartThings Multipurpose sensor (2015, 2016, 2018 models)
+- SmartThings Outlet
 - SmartThings Outlet
 
 ### Stelpro
@@ -322,42 +368,60 @@ git pull
 - Sylvania Smart Home adjustable white MR16 LED bulb
 
 ### Trust
+- Trust Remote control
 - Trust Smart Dimmable LED Bulb
+- Trust Smart Tunable LED bulb
 - Trust Motion Sensor
+- Trust Water leakage detector
 - Trust Wireless contact sensor
+
+### TUYATEC
+- TUYATEC PIR sensor
+- TUYATEC Temperature & humidity sensor
+- TUYATEC Smart light switch - 1 gang without neutral wire
+- TUYATEC Zigbee smart dimmer
+- TUYATEC Temperature & humidity sensor with display
 
 ### Xiaomi
 
+- Xiaomi Aqara Opple 4-button switch
+- Xiaomi Aqara Opple 6-button switch
+- Xiaomi Aqara curtain motor
 - Xiaomi Aqara door & window contact sensor
 - Xiaomi Aqara double key wired wall switch
 - Xiaomi Aqara double key wireless wall switch
 - Xiaomi Aqara human body movement and illuminance sensor
-- Xiaomi Aqara Opple 4-button switch
-- Xiaomi Aqara Opple 6-button switch
 - Xiaomi Aqara single key wired wall switch
 - Xiaomi Aqara single key wireless wall switch
-- Xiaomi Aqara socket Zigbee
 - Xiaomi Aqara smart LED bulb
+- Xiaomi Aqara socket Zigbee
 - Xiaomi Aqara temperature, humidity and pressure sensor
 - Xiaomi Aqara two-way control module
 - Xiaomi Aqara vibration sensor
 - Xiaomi Aqara water leak sensor
 - Xiaomi Aqara wireless switch (WXKG11LM)
 - Xiaomi Aqara wireless switch with gyroscope (WXKG12LM)
-- Xiaomi MiJia door & window contact sensor
+- Xiaomi Mi power plug ZigBee
+- Xiaomi Mi power plug ZigBee EU
+- Xiaomi Mi smart home cube
 - Xiaomi MiJia Honeywell smoke detector
+- Xiaomi MiJia door & window contact sensor
 - Xiaomi MiJia gas leak detector
+- Xiaomi MiJia light intensity sensor
 - Xiaomi MiJia human body movement sensor
 - Xiaomi MiJia temperature & humidity sensor
 - Xiaomi MiJia wireless switch
-- Xiaomi Mi smart home cube
-- Xiaomi Mi power plug ZigBee
+
+### Weiser
+- Weiser SmartCode 10
+- Weiser SmartCode 10 Touch
 
 ### eWeLink
 - eWeLink Zigbee smart plug
 
 ### iCasa
 - iCasa Zigbee 3.0 Dimmer
+- iCasa Zigbee 3.0 Switch
 
 ### ilux
 - ilux Dimmable A60 E27 LED Bulb
@@ -365,7 +429,15 @@ git pull
 ### Eurotronic
 - Eurotronic SPZB0001 thermostat
 
+### Zemismart
+- Zemismart ZM-CSW002-D 2 gang switch
+- Zemismart ZM-L03E-Z 3 gang with neutral wire switch
+- Zemismart RGB LED downlight
+- Zemismart Curtain/roller blind switch
+
 ### Other
 - Custom devices (DiY) DNCKAT single key wired wall light switch
+- Custom devices (DiY) ZigUP
+- DIYRuZ DIYRuZ_magnet
 
 If your device is not listed here but [zigbee2mqtt supports](https://koenkk.github.io/zigbee2mqtt/information/supported_devices.html) it, support can be added (fairly) easy by creating device adapter.

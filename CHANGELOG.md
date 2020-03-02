@@ -1,19 +1,68 @@
 # Changelog
 
 ## master
+
+New devices:
+- Xiaomi MiJia light intensity sensor
+- Weiser SmartCode 10
+- Weiser SmartCode 10 Touch
+- Müller Licht Tint smart switch
+- TuYa Temperature & humidity sensor with display
+- Gledopto Zigbee LED controller RGBW plus model
+- SmartThings Outlet UK
+- IKEA TRADFRI signal repeater
+
+## 0.1.0
 - Update adapter for Nue / 3A Smart in-wall switch (HGZB-01A)
 - Improve Xiaomi Aqara single key wireless wall switch (WXKG03LM) support
+- Improve Ikea TRADFRI remote control (E1524/E1810) support
+- Zigbee groups basic support (get state, turn on/off)
 
 New devices:
 - IKEA LEPTITER Recessed spot light
 - IKEA SYMFONISK sound controller
 - IKEA TRADFRI LED bulb E27 806 lumen, dimmable, white spectrum, clear
 - IKEA TRADFRI LED bulb E12 600 lumen, dimmable, white spectrum, opal white
+- IKEA GUNNARP LED light panel, dimmable, white spectrum (40x40 cm)
 - Xiaomi Aqara Opple 4-button switch
 - eWeLink Zigbee smart plug
 - Innr Smart plug (SP 222)
+- Innr Color Flex LED strip
 - Konke Contact sensor
 - Konke Water detector
+- TUYATEC PIR sensor
+- TUYATEC Temperature & humidity sensor
+- TUYATEC Smart light switch - 1 gang without neutral wire
+- TUYATEC Zigbee smart dimmer
+- Oujiabao Gas and carbon monoxide alarm
+- Gledopto Zigbee LED controller RGB + CCT plus model
+- Gledopto Zigbee LED controller RGB + CCT or RGBW
+- Gledopto Zigbee LED controller dimmer
+- Gledopto Smart RGB+CCT GU10
+- Gledopto Soposh dual white and color
+- Gledopto Zigbee ON/OFF Wall Switch
+- Custom devices (DiY) ZigUP
+- Robb ZigBee AC phase-cut rotary dimmer
+- Xiaomi Mi power plug ZigBee EU
+- Trust Smart Tunable LED bulb
+- Trust Remote control
+- Trust Water leakage detector
+- IKEA TRADFRI LED bulb E26/E27 806 lumen, dimmable, warm white
+- Zemismart ZM-CSW002-D 2 gang switch
+- iCasa Zigbee 3.0 Switch
+- DIYRuZ DIYRuZ_magnet
+- Xiaomi Aqara curtain motor
+- CR Smart Home Valve control
+- CR Smart Home Motion sensor
+- CR Smart Home Door sensor
+- CR Smart Home Smoke sensor
+- CR Smart Home Socket
+- CR Smart Home Water leak detector
+- IKEA TRADFRI LED bulb E14 470 lumen, dimmable, white spectrum, opal white
+- Zemismart ZM-L03E-Z 3 gang with neutral wire switch
+- Zemismart RGB LED downlight
+- Zemismart Curtain/roller blind switch
+- Bitron Wireless wall thermostat with relay
 
 ## 0.0.20
 - Properly handle heartbeat message from IKEA TRADFRI Remote Control
