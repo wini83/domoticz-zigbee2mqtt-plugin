@@ -1,6 +1,10 @@
 # Changelog
 
 ## master
+- Support for "stop" command for blinds adapter
+- Support for "skip" action on Ikea Symfonisk
+- Support for `rgb` and `rgbw` zigbee groups
+- Decoupled mode support for Xiaomi single key wired switches (QBKG04LM, QBKG11LM)
 
 New devices:
 - Xiaomi MiJia light intensity sensor
@@ -11,6 +15,39 @@ New devices:
 - Gledopto Zigbee LED controller RGBW plus model
 - SmartThings Outlet UK
 - IKEA TRADFRI signal repeater
+- Alecto Smart Home - Smart sensor door / window
+- Alecto Smart Home branded Smart sensor temp and humidity
+- Xiaomi Aqara Opple 2-button switch
+- Lonhonso 2 gang switch
+- TuYa 2 gang switch
+- TuYa Temperature & humidity sensor with display
+- HEIMAN Smart switch - 1 gang with neutral wire
+- HEIMAN Water leakage sensor
+- HEIMAN Smart temperature & humidity Sensor
+- HEIMAN Smart in wall plug
+- HEIMAN Smart motion sensor
+- HEIMAN Water leakage sensor
+- HEIMAN Smart siren
+- HEIMAN Combustible gas sensor
+- Salus Smart plug
+- SmartThings Outlet with power meter
+- SmartThings Zigbee Outlet UK with power meter
+- SmartThings Zigbee smart plug with power meter
+- Bitron Compact magnetic contact sensor
+- Xiaomi Vima Smart Lock
+- OSRAM SMART+ classic E27 dimmable
+- OSRAM SMART+ outdoor lantern RGBW
+- OSRAM SMART+ classic E27 TW
+- OSRAM SMART+ LED PAR16 GU10
+- OSRAM SMART+ LED CLASSIC E27 RGBW
+- OSRAM Smart+ gardenpole 4W RGBW
+- OSRAM Smart+ mini gardenpole RGBW
+- OSRAM SMART+ Spot GU10 Multicolor
+- OSRAM OSRAM SubstiTUBE T8 Advanced UO Connected
+- OSRAM OSRAM LED panel TW 595 UGR22
+- Shenzhen Homa Smart LED driver
+- Shenzhen Homa Wireless dimmable controller
+- Shenzhen Homa ZigBee AC phase-cut dimmer
 
 ## 0.1.0
 - Update adapter for Nue / 3A Smart in-wall switch (HGZB-01A)

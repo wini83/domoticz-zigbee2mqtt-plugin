@@ -31,6 +31,8 @@ from adapters.philips import philips_adapters
 from adapters.swo.KEF1PA import KEF1PA
 from adapters.trust import trust_adapters
 from adapters.eurotronic_thermostat import EurotronicThermostatAdapter
+from adapters.tuya import tuya_adapters
+from adapters.tuya.TS0002 import TS0002
 from adapters.tuyatec import tuyatec_adapters
 from adapters.diy.ptvo_switch import PtvoSwitch
 from adapters.diy.zigup import ZigupAdapter
@@ -103,6 +105,8 @@ adapter_by_model = dict({
     'DZ4743-00B': OnOffSwitchAdapter,   # Lingan Zigbee OnOff Controller
     # Livolo
     'TI0001': TI0001,                   # Livolo Switch TI0001
+    # Lonhonso
+    'X702': TS0002,                     # Lonhonso 2 gang switch
     # Müller Licht
     '404000/404005/404012': RGBWAdapter,            # Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white
     '404006/404008/404004': DimmableCtBulbAdapter,  # Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, opal white
@@ -128,6 +132,8 @@ adapter_by_model = dict({
     # ROBB
     'ROB_200-004-0': DimmableBulbAdapter,   # ROBB ZigBee AC phase-cut dimmer
     'ROB_200-014-0': DimmableBulbAdapter,   # ROBB ZigBee AC phase-cut rotary dimmer
+    # Salus
+    'SP600': OnOffKwhAdapter,               # Salus Smart plug
     # Sengled
     'E1ACA4ABE38A': DimmableBulbAdapter,    # Sengled Element downlight smart LED bulb
     'E11-G13': DimmableBulbAdapter,         # Sengled Element Classic (A19)
@@ -136,6 +142,10 @@ adapter_by_model = dict({
     'E12-N14': DimmableBulbAdapter,         # Sengled Element Classic (BR30)
     'Z01-A19NAE26': DimmableCtBulbAdapter,  # Sengled Element Plus (A19)
     'Z01-CIA19NAE26': DimmableBulbAdapter,  # Sengled Element Touch (A19)
+    # Shenzhen Homa
+    'HLD812-Z-SC': DimmableBulbAdapter, # Shenzhen Homa Smart LED driver
+    'HLC610-Z': DimmableBulbAdapter,    # Shenzhen Homa Wireless dimmable controller
+    'HLC821-Z-SC': DimmableBulbAdapter, # Shenzhen Homa ZigBee AC phase-cut dimmer
     # Smart Home Pty
     'HGZB-07A': RGBWAdapter,            # Smart Home Pty RGBW Downlight
     'HGZB-20-DE': OnOffSwitchAdapter,   # Smart Home Pty Power plug
@@ -180,6 +190,7 @@ adapter_by_model = dict({
     **philips_adapters,
     **samsung_adapters,
     **trust_adapters,
+    **tuya_adapters,
     **tuyatec_adapters,
     **zemismart_adapters,
 )

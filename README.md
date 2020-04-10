@@ -38,6 +38,8 @@ Plugin supports [zigbee groups](https://www.zigbee2mqtt.io/information/groups.ht
 |---------|---------------------------------------|----------------|
 | _dimmer | Dimmer Switch                         | mygroup_dimmer |
 | _ct     | Dimmer Switch with Color Temperature  | mygroup_ct     |
+| _rgb    | RGB Switch                            | mygroup_rgb    |
+| _rgbw   | RGBW Switch                           | mygroup_rgbw   |
 
 if no suffix will be found then On/Off switch will be created by default
 
@@ -56,6 +58,7 @@ if no suffix will be found then On/Off switch will be created by default
 - Belkin WeMo smart LED bulb
 
 ### Bitron
+- Bitron Compact magnetic contact sensor
 - Bitron Wireless motion detector
 - Bitron Wireless smart plug
 - Bitron Wireless wall thermostat with relay
@@ -126,10 +129,17 @@ if no suffix will be found then On/Off switch will be created by default
 - Gledopto Zigbee USB mini LED controller RGB + CCT
 
 ### HEIMAN
+- HEIMAN Carbon monoxide sensor
+- HEIMAN Combustible gas sensor
 - HEIMAN Door sensor
+- HEIMAN Smart in wall plug
+- HEIMAN Smart metering plug
+- HEIMAN Smart motion sensor
+- HEIMAN Smart siren
+- HEIMAN Smart switch - 1 gang with neutral wire
+- HEIMAN Smart temperature & humidity Sensor
 - HEIMAN Smoke detector
 - HEIMAN Water leakage sensor
-- HEIMANN Carbon monoxide sensor
 
 ### Hive
 - Hive Active smart bulb white LED (E27)
@@ -221,6 +231,9 @@ if no suffix will be found then On/Off switch will be created by default
 ### Livolo
 - Livolo Switch TI0001
 
+### Lonhonso
+- Lonhonso 2 gang switch
+
 ### Müller Licht
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, opal white
@@ -237,26 +250,35 @@ if no suffix will be found then On/Off switch will be created by default
 - Nue ZigBee smart light controller
 
 ### OSRAM
+- OSRAM Classic A60 RGBW
+- OSRAM Flex RGBW
 - OSRAM LIGHTIFY LED A19 tunable white / Classic A60 TW 
-- OSRAM LIGHTIFY LED PAR16 50 GU10 tunable white
-- OSRAM LIGHTIFY LED Classic B40 tunable white
-- OSRAM LIGHTIFY LED Classic A60 clear
 - OSRAM LIGHTIFY LED CLA60 E27 RGBW
+- OSRAM LIGHTIFY LED Classic A60 clear
+- OSRAM LIGHTIFY LED Classic B40 tunable white
+- OSRAM LIGHTIFY LED PAR16 50 GU10 tunable white
 - OSRAM LIGHTIFY Surface Light LED Tunable White
 - OSRAM LIGHTIFY Surface Light TW
+- OSRAM OSRAM LED panel TW 595 UGR22
+- OSRAM OSRAM SubstiTUBE T8 Advanced UO Connected
+- OSRAM Outdoor Flex RGBW
 - OSRAM Smart+ Candle E14 Dimmable White
 - OSRAM Smart+ Ceiling TW
 - OSRAM Smart+ Classic A 60 TW
 - OSRAM Smart+ Gardenpole RGBW
+- OSRAM Smart+ LED CLASSIC E27 RGBW
+- OSRAM Smart+ LED PAR16 GU10
 - OSRAM Smart+ Motion Sensor
 - OSRAM Smart+ Outdoor Wall Lantern RGBW
 - OSRAM Smart+ Plug
-- OSRAM SMART+ spot GU5.3 tunable white
 - OSRAM Smart+ Spot GU10 Multicolor
 - OSRAM Smart+ Switch Mini
-- OSRAM Flex RGBW
-- OSRAM Outdoor Flex RGBW
-- OSRAM Classic A60 RGBW
+- OSRAM Smart+ classic E27 TW
+- OSRAM Smart+ classic E27 dimmable
+- OSRAM Smart+ gardenpole 4W RGBW
+- OSRAM Smart+ mini gardenpole RGBW
+- OSRAM Smart+ outdoor lantern RGBW
+- OSRAM Smart+ spot GU5.3 tunable white
 
 ### Oujiabao
 - Oujiabao Gas and carbon monoxide alarm
@@ -326,6 +348,9 @@ if no suffix will be found then On/Off switch will be created by default
 - ROBB ZigBee AC phase-cut dimmer
 - ROBB ZigBee AC phase-cut rotary dimmer
 
+### Salus
+- Salus Smart plug
+
 ### Sengled
 - Sengled Element Classic (A19)
 - Sengled Element Classic (A60)
@@ -334,6 +359,11 @@ if no suffix will be found then On/Off switch will be created by default
 - Sengled Element Plus (A19)
 - Sengled Element Plus Color (A19)
 - Sengled Element Touch (A19)
+
+# Shenzhen Homa
+- Shenzhen Homa Smart LED driver
+- Shenzhen Homa Wireless dimmable controller
+- Shenzhen Homa ZigBee AC phase-cut dimmer
 
 ### Smart Home Pty
 - Smart Home Pty RGBW Downlight
@@ -346,7 +376,9 @@ if no suffix will be found then On/Off switch will be created by default
 - SmartThings Multi sensor (2015, 2016, 2018 models)
 - SmartThings Multipurpose sensor (2015, 2016, 2018 models)
 - SmartThings Outlet
-- SmartThings Outlet
+- SmartThings Outlet with power meter
+- SmartThings Zigbee Outlet UK with power meter
+- SmartThings Zigbee smart plug with power meter
 
 ### Stelpro
 - Stelpro Built-in electronic thermostat
@@ -375,6 +407,10 @@ if no suffix will be found then On/Off switch will be created by default
 - Trust Water leakage detector
 - Trust Wireless contact sensor
 
+### TuYa
+- TuYa Temperature & humidity sensor with display
+- TuYa 2 gang switch
+
 ### TUYATEC
 - TUYATEC PIR sensor
 - TUYATEC Temperature & humidity sensor
@@ -384,6 +420,7 @@ if no suffix will be found then On/Off switch will be created by default
 
 ### Xiaomi
 
+- Xiaomi Aqara Opple 2-button switch
 - Xiaomi Aqara Opple 4-button switch
 - Xiaomi Aqara Opple 6-button switch
 - Xiaomi Aqara curtain motor
@@ -411,6 +448,7 @@ if no suffix will be found then On/Off switch will be created by default
 - Xiaomi MiJia human body movement sensor
 - Xiaomi MiJia temperature & humidity sensor
 - Xiaomi MiJia wireless switch
+- Xiaomi Vima Smart Lock
 
 ### Weiser
 - Weiser SmartCode 10

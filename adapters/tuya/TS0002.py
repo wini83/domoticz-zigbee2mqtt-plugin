@@ -3,7 +3,8 @@ import json
 from adapters.base_adapter import Adapter
 from devices.switch.on_off_switch import OnOffSwitch
 
-class ZMCSW002D(Adapter):
+
+class TS0002(Adapter):
     def __init__(self, devices):
         super().__init__(devices)
 
