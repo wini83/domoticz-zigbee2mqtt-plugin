@@ -55,7 +55,7 @@ class BasePlugin:
         mqtt_client_id = Parameters["Mode3"].strip()
         self.mqttClient = MqttClient(mqtt_server_address, mqtt_server_port, mqtt_client_id, self.onMQTTConnected, self.onMQTTDisconnected, self.onMQTTPublish, self.onMQTTSubscribed)
 
-        self.api = API(Devices, self.publishToMqtt)
+        self.api = API(Devices, self.onApiCommand)
         self.devices_manager = DevicesManager()
         self.groups_manager = GroupsManager()
 
@@ -84,6 +84,14 @@ class BasePlugin:
 
         if (message != None):
             self.publishToMqtt(message['topic'], message['payload'])
+
+    def onApiCommand(self, command, data):
+        if command == 'publish_mqtt':
+            return self.publishToMqtt(data['topic'], data['payload'])
+        elif command == 'remove_device':
+            return self.devices_manager.remove(Devices, data)
+        else:
+            Domoticz.Error('Internal API command "' + command +'" is not supported by plugin')
 
     def publishToMqtt(self, topic, payload):
         self.mqttClient.publish(self.base_topic + '/' + topic, payload)
@@ -140,6 +148,10 @@ class BasePlugin:
             return
 
         if (topic == 'bridge/log'):
+            is_connected = message['type'] == 'device_connected'
+            is_removed = message['type'] == 'device_removed'
+            is_paired = message['type'] == 'pairing' and message['message'] == 'interview_successful'
+
             if message['type'] == 'devices':
                 Domoticz.Log('Received available devices list from bridge')
                 
@@ -154,11 +166,16 @@ class BasePlugin:
                 Domoticz.Log('Received groups list from bridge')
                 self.groups_manager.register_groups(Devices, message['message'])
 
-            if message['type'] == 'device_connected' or message['type'] == 'device_removed':
+            if is_connected or is_removed or is_paired:
                 self.publishToMqtt('bridge/config/devices', '')
 
             if message['type'] == 'ota_update':
                 Domoticz.Log(message['message'])
+
+            if message['type'] == 'zigbee_publish_error':
+                #an error occured on publish to the zigbee network
+                deviceMeta = message['meta']
+                Domoticz.Error("A Zigbee publish error occured for device '" + deviceMeta['friendly_name'] + "' with error message: " + message['message'])
 
             return
 
@@ -168,35 +185,54 @@ class BasePlugin:
             self.groups_manager.handle_mqtt_message(topic, message)
 
     def install(self):
-        Domoticz.Debug('Installing custom pages...')
-        
-        if not (os.path.isdir('./www/templates/zigbee2mqtt')):
-            os.mkdir('./www/templates/zigbee2mqtt')
+        Domoticz.Log('Installing plugin custom page...')
 
-        copy2('./plugins/zigbee2mqtt/frontend/zigbee2mqtt.html', './www/templates/')
-        copy2('./plugins/zigbee2mqtt/frontend/zigbee2mqtt.js', './www/templates/')
-        copy2('./plugins/zigbee2mqtt/frontend/zigbee_devices.js', './www/templates/zigbee2mqtt/')
-        copy2('./plugins/zigbee2mqtt/frontend/zigbee_groups.js', './www/templates/zigbee2mqtt/')
-        copy2('./plugins/zigbee2mqtt/frontend/libs/leaflet.js', './www/templates/zigbee2mqtt/')
-        copy2('./plugins/zigbee2mqtt/frontend/libs/leaflet.css', './www/templates/zigbee2mqtt/')
-        copy2('./plugins/zigbee2mqtt/frontend/libs/viz.js', './www/templates/zigbee2mqtt/')
-        copy2('./plugins/zigbee2mqtt/frontend/libs/viz.full.render.js', './www/templates/zigbee2mqtt/')
-        
-        Domoticz.Debug('Installing custom pages completed.')
+        try:
+            source_path = os.path.dirname(os.path.abspath(__file__)) + '/frontend'
+            templates_path = os.path.abspath(source_path + '/../../../www/templates')
+            dst_plugin_path = templates_path + '/zigbee2mqtt'
+
+            Domoticz.Debug('Copying files from ' + source_path + ' to ' + templates_path)
+
+            if not (os.path.isdir(dst_plugin_path)):
+                os.makedirs(dst_plugin_path)
+
+            copy2(source_path + '/zigbee2mqtt.html', templates_path)
+            copy2(source_path + '/zigbee2mqtt.js', templates_path)
+            copy2(source_path + '/zigbee_devices.js', dst_plugin_path)
+            copy2(source_path + '/zigbee_groups.js', dst_plugin_path)
+            copy2(source_path + '/libs/leaflet.js', dst_plugin_path)
+            copy2(source_path + '/libs/leaflet.css', dst_plugin_path)
+            copy2(source_path + '/libs/viz.js', dst_plugin_path)
+            copy2(source_path + '/libs/viz.full.render.js', dst_plugin_path)
+            
+            Domoticz.Log('Installing plugin custom page completed.')
+        except Exception as e:
+            Domoticz.Error('Error during installing plugin custom page')
+            Domoticz.Error(repr(e))
 
     def uninstall(self):
-        Domoticz.Debug('Uninstalling custom pages...')
+        Domoticz.Log('Uninstalling plugin custom page...')
 
-        if (os.path.isdir('./www/templates/zigbee2mqtt')):
-            rmtree('./www/templates/zigbee2mqtt')
+        try:
+            templates_path = os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/../../www/templates')
+            dst_plugin_path = templates_path + '/zigbee2mqtt'
 
-        if os.path.exists("./www/templates/zigbee2mqtt.html"):
-            os.remove("./www/templates/zigbee2mqtt.html")
+            Domoticz.Debug('Removing files from ' + templates_path)
 
-        if os.path.exists("./www/templates/zigbee2mqtt.js"):
-            os.remove("./www/templates/zigbee2mqtt.js")
+            if (os.path.isdir(dst_plugin_path)):
+                rmtree(dst_plugin_path)
 
-        Domoticz.Debug('Uninstalling custom pages completed.')
+            if os.path.exists(templates_path + "/zigbee2mqtt.html"):
+                os.remove(templates_path + "/zigbee2mqtt.html")
+
+            if os.path.exists(templates_path + "/zigbee2mqtt.js"):
+                os.remove(templates_path + "/zigbee2mqtt.js")
+
+            Domoticz.Log('Uninstalling plugin custom page completed.')
+        except Exception as e:
+            Domoticz.Error('Error during uninstalling plugin custom page')
+            Domoticz.Error(repr(e))
 
 
 global _plugin

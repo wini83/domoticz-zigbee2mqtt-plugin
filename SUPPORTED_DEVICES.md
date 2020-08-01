@@ -56,6 +56,12 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### ELKO
 - Elko ESH RS16 316GLED dimmer RF PH. ZigBee in-wall smart dimmer
 
+### Essentials
+- Essentials Smart home heizkörperthermostat premium (white-label of Siterwell GS361A-H04) 
+
+### Eurotronic
+- Eurotronic Spirit Zigbee wireless heater thermostat
+
 ### GE
 - GE Link smart LED light bulb, BR30 soft white (2700K)
 - GE ZigBee plug-in smart dimmer
@@ -68,8 +74,9 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 
 ### Gledopto
 - Gledopto LED RGB + CCT downlight
-- Gledopto Smart 12W E27 RGB / CW LED bulb
+- Gledopto Smart 4W E14 RGB / CCT LED bulb
 - Gledopto Smart 6W E27 RGB / CW LED bulb
+- Gledopto Smart 12W E27 RGB / CW LED bulb
 - Gledopto Smart RGB+CCT GU10
 - Gledopto Smart RGBW GU10
 - Gledopto Smart Wnite GU10
@@ -104,6 +111,7 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 
 ### Ikea
 - IKEA GUNNARP LED light panel, dimmable, white spectrum (40x40 cm)
+- IKEA GUNNARP panel round
 - IKEA SYMFONISK sound controller
 - IKEA TRADFRI LED bulb E26/E27 980 lumen, dimmable, white spectrum, opal white
 - IKEA TRADFRI LED bulb E26/E27 950 lumen, dimmable, white spectrum, clear
@@ -191,6 +199,9 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### Lonhonso
 - Lonhonso 2 gang switch
 
+### Meazon
+- Meazon DinRail 1-phase meter
+
 ### Müller Licht
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, opal white
@@ -249,25 +260,49 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Paulmann SmartHome Yourled RGB Controller
 
 ### Philips
+- Philips Hue Aphelion downlight
+- Philips Hue Attract
 - Philips Hue Being
+- Philips Hue Being Pendant
+- Philips Hue Beyond white and color ambiance suspension light
+- Philips Hue Calla outdoor
+- Philips Hue Calla outdoor
+- Philips Hue Centura
 - Philips Hue Cher ceiling light
+- Philips Hue Discover white and color ambiance flood light
+- Philips Hue Econic outdoor Pedestal
+- Philips Hue Ensis
+- Philips Hue Fair
 - Philips Hue Filament Standard A60/E27 bluetooth
 - Philips Hue Fillament Bulb G93
+- Philips Hue Flourish white and color ambiance pendant light
 - Philips Hue Fuzo outdoor wall light
 - Philips Hue Go
 - Philips Hue Go with Bluetooth
+- Philips Hue Impress outdoor Pedestal
+- Philips Hue Iris (Generation 2)
 - Philips Hue Lily outdoor spot light
 - Philips Hue Lux A19 bulb E27
 - Philips Hue Sana
+- Philips Hue Signe floor light
+- Philips Hue Signe table light
 - Philips Hue Struana
 - Philips Hue Welcome white flood light
 - Philips Hue dimmer switch
 - Philips Hue motion outdoor sensor
 - Philips Hue motion sensor
+- Philips Hue outdoor Impress lantern
+- Philips Hue outdoor Impress wall lamp
+- Philips Hue outdoor Impress wall lamp
+- Philips Hue smart plug - AU
 - Philips Hue smart plug - EU
 - Philips Hue smart plug bluetooth
+- Philips Hue white A19 bulb E26 bluetooth
+- Philips Hue white A19 bulb E26 with Bluetooth
+- Philips Hue white A19 bulb with Bluetooth
 - Philips Hue white A60 bulb E27
 - Philips Hue white A60 bulb E27 bluetooth
+- Philips Hue white E12 with Bluetooth
 - Philips Hue white E14
 - Philips Hue white GU10
 - Philips Hue white GU10 bluetooth
@@ -286,7 +321,11 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Philips Hue white ambiance E27 with Bluetooth
 - Philips Hue white ambiance GU10
 - Philips Hue white ambiance GU10 with Bluetooth
+- Philips Hue white ambiance Muscari pendant light
 - Philips Hue white ambiance Still
+- Philips Hue white ambiance bathroom ceiling light Adore
+- Philips Hue white ambiance bathroom mirror light Adore
+- Philips Hue white ambiance suspension Amaze
 - Philips Hue white ambiance suspension Fair
 - Philips Hue white and color ambiance BR30
 - Philips Hue white and color ambiance BR30 with bluetooth
@@ -297,11 +336,18 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Philips Hue white and color ambiance LightStrip outdoor
 - Philips Hue white and color ambiance LightStrip plus
 - Philips Hue white and color ambiance Play Lightbar
+- Philips Hue white and color ambience Argenta spot (1 spot)
+- Philips Hue white and color ambience Argenta spot (2 spots)
+- Philips Hue white and color ambience Argenta spot (3 spots)
+- Philips Hue white and color ambience Argenta spot (4 spots)
 - Philips Hue white filament Edison E27 LED
+- Philips Hue white filament Edison ST19 LED
+- Philips Hue white single filament bulb A19 E26 with Bluetooth
 - Philips LivingColors Aura
 - Philips Phoenix light
 
 ### ROBB
+- ROBB Zigbee AC in wall switch
 - ROBB ZigBee AC phase-cut dimmer
 - ROBB ZigBee AC phase-cut rotary dimmer
 
@@ -322,6 +368,15 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Shenzhen Homa Wireless dimmable controller
 - Shenzhen Homa ZigBee AC phase-cut dimmer
 
+# Schneider Electric
+- Schneider Electric Wiser radiator thermostat
+
+# Sinope
+- Sinope Zigbee line volt thermostat
+
+### Siterwell
+- Siterwell Radiator valve with thermostat
+
 ### Smart Home Pty
 - Smart Home Pty RGBW Downlight
 - Smart Home Pty Power plug
@@ -334,6 +389,7 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - SmartThings Multipurpose sensor (2015, 2016, 2018 models)
 - SmartThings Outlet
 - SmartThings Outlet with power meter
+- SmartThings Smart siren
 - SmartThings Zigbee Outlet UK with power meter
 - SmartThings Zigbee smart plug with power meter
 
@@ -343,6 +399,7 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### Swann
 - Swann Key fob remote
 - Swann Window/door sensor
+- Swann Motion and temperature sensor
 
 ### Sylvania
 - Sylvania LIGHTIFY LED RGBW A19
@@ -367,6 +424,7 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### TuYa
 - TuYa Temperature & humidity sensor with display
 - TuYa 2 gang switch
+- TuYa 10A UK or 16A EU smart plug
 
 ### TUYATEC
 - TUYATEC PIR sensor
@@ -417,6 +475,10 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### iCasa
 - iCasa Zigbee 3.0 Dimmer
 - iCasa Zigbee 3.0 Switch
+- iCasa Zigbee AC dimmer
+- iCasa Zigbee 3.0 Filament Lamp 60/64/95/125 mm
+- iCasa Zigbee 3.0 Keypad Pulse 4S
+- iCasa Zigbee 3.0 Keypad Pulse 8S
 
 ### ilux
 - ilux Dimmable A60 E27 LED Bulb
