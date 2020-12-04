@@ -62,6 +62,21 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### Eurotronic
 - Eurotronic Spirit Zigbee wireless heater thermostat
 
+### eWeLink
+- eWeLink Zigbee smart plug
+- eWeLink Contact sensor
+- eWeLink Temperature and humidity sensor
+- eWeLink Motion sensor
+
+### Feibit
+- Feibit Combustible gas sensor
+- Feibit Door or window contact switch
+- Feibit Power plug
+- Feibit Smart carbon monoxide sensor
+- Feibit Smart temperature & humidity Sensor
+- Feibit Smoke detector
+- Feibit Water leakage sensor
+
 ### GE
 - GE Link smart LED light bulb, BR30 soft white (2700K)
 - GE ZigBee plug-in smart dimmer
@@ -87,6 +102,7 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Gledopto Zigbee LED controller RGB + CCT or RGBW
 - Gledopto Zigbee LED controller RGB + CCT plus model
 - Gledopto Zigbee LED controller RGBW plus model    
+- Gledopto Zigbee LED controller RGBW (1 ID)
 - Gledopto Zigbee LED controller WW/CW Dimmer
 - Gledopto Zigbee LED controller dimmer
 - Gledopto Zigbee ON/OFF Wall Switch
@@ -146,7 +162,8 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - ITEAD SONOFF ZigBee DIY Smart Switch
 
 ### Immax
-- Immax LED E14/230V C35 5W TB 440LM ZIGBEE DIM 
+- Immax LED E14/230V C35 5W TB 440LM ZIGBEE DIM
+- Immax 4-Touch single click buttons
 
 ### Innr
 - Innr Color Flex LED strip
@@ -190,6 +207,9 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 ### Ksentry
 - Ksentry Electronics Zigbee OnOff Controller
 
+### Life Control
+- LifeControl Air sensor
+
 ### Ligan
 - Lingan Zigbee OnOff Controller
 
@@ -197,10 +217,14 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Livolo Switch TI0001
 
 ### Lonhonso
+- Lonsonho 1 gang switch
 - Lonhonso 2 gang switch
 
 ### Meazon
 - Meazon DinRail 1-phase meter
+
+### Moes
+- Moes ZigBee3.0 dual USB wireless socket plug
 
 ### Müller Licht
 - Müller Licht Tint LED bulb GU10/E14/E27 350/470/806 lumen, dimmable, color, opal white
@@ -209,6 +233,9 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 
 ### Nanoleaf
 - Nanoleaf Ivy smart bulb
+
+### Neo
+- Neo Temperature & humidity sensor and alarm
 
 ### Netvox
 - Netvox Power socket with power consumption monitoring
@@ -300,8 +327,10 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Philips Hue white A19 bulb E26 bluetooth
 - Philips Hue white A19 bulb E26 with Bluetooth
 - Philips Hue white A19 bulb with Bluetooth
+- Philips Hue white A21 bulb B22 with Bluetooth (1600 Lumen)
 - Philips Hue white A60 bulb E27
 - Philips Hue white A60 bulb E27 bluetooth
+- Philips Hue white A67 bulb E26 with Bluetooth (1600 Lumen)
 - Philips Hue white E12 with Bluetooth
 - Philips Hue white E14
 - Philips Hue white GU10
@@ -363,19 +392,27 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - Sengled Element Plus Color (A19)
 - Sengled Element Touch (A19)
 
-# Shenzhen Homa
+### Shenzhen Homa
 - Shenzhen Homa Smart LED driver
 - Shenzhen Homa Wireless dimmable controller
 - Shenzhen Homa ZigBee AC phase-cut dimmer
 
-# Schneider Electric
+### Schneider Electric
 - Schneider Electric Wiser radiator thermostat
 
-# Sinope
+### Sinope
 - Sinope Zigbee line volt thermostat
 
 ### Siterwell
 - Siterwell Radiator valve with thermostat
+
+### Sonoff
+- SONOFF Zigbee smart switch
+- SONOFF Zigbee smart plug (US version)
+- SONOFF Temperature and humidity sensor
+- SONOFF Motion sensor
+- SONOFF Contact sensor
+- SONOFF Push switch
 
 ### Smart Home Pty
 - Smart Home Pty RGBW Downlight
@@ -425,16 +462,27 @@ If your device is not listed in the list below but [zigbee2mqtt supports](https:
 - TuYa Temperature & humidity sensor with display
 - TuYa 2 gang switch
 - TuYa 10A UK or 16A EU smart plug
+- TuYa Multiprise with 4 AC outlets and 2 USB super charging ports (10A or 16A)
+- TuYa Wireless switch with 1 button
+- TuYa Radiator valve with thermostat
+- TuYa Curtain motor
+- TuYa Smart light switch - 1 gang without neutral wire
+- TuYa Smart light switch - 2 gang without neutral wire
+- TuYa Smart light switch - 3 gang without neutral wire
 
 ### TUYATEC
 - TUYATEC PIR sensor
 - TUYATEC Temperature & humidity sensor
-- TUYATEC Smart light switch - 1 gang without neutral wire
 - TUYATEC Zigbee smart dimmer
 - TUYATEC Temperature & humidity sensor with display
 
 ### Xiaomi
 
+- Xiaomi Aqara D1 single gang smart wall switch (no neutral wire)
+- Xiaomi Aqara D1 1 gang smart wall switch (with neutral wire)
+- Xiaomi Aqara D1 2 gang smart wall switch (with neutral wire)
+- Xiaomi Aqara D1 3 gang smart wall switch (no neutral wire)
+- Xiaomi Aqara D1 double key wireless wall switch
 - Xiaomi Aqara Opple 2-button switch
 - Xiaomi Aqara Opple 4-button switch
 - Xiaomi Aqara Opple 6-button switch

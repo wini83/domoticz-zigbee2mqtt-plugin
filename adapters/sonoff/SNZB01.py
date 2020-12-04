@@ -2,18 +2,16 @@ from adapters.adapter_with_battery import AdapterWithBattery
 from devices.switch.selector_switch import SelectorSwitch
 
 
-class WXKG02LM(AdapterWithBattery):
+class SNZB01(AdapterWithBattery):
     def __init__(self, devices):
         super().__init__(devices)
 
-        self.switch = SelectorSwitch(devices, 'switch', 'click')
+        self.switch = SelectorSwitch(devices, 'switch', 'action')
         self.switch.add_level('Off', None)
-        self.switch.add_level('Switch 1', 'left')
-        self.switch.add_level('Switch 2', 'right')
-        self.switch.add_level('Both_Click', 'both')
-        self.switch.add_level('Switch 1 Double', 'left_double')
-        self.switch.add_level('Switch 2 Double', 'right_double')
-        self.switch.add_level('Both_Click Double', 'both_double')
+        self.switch.add_level('Click', 'single')
+        self.switch.add_level('Double Click', 'double')
+        self.switch.add_level('Long Press', 'long')
+
         self.switch.set_selector_style(SelectorSwitch.SELECTOR_TYPE_BUTTONS)
         self.switch.disable_value_check_on_update()
 
